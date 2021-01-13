@@ -7,11 +7,11 @@ export default function App() {
     lastName:"",
     email:"",
   });
-  const [submitted, setValues] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [valid, setValid] = useState(false);
 
-  const handleFirstNameInputChange = (event) => {
-    setValues({...values, firstName: event.target.value})
+  function handleFirstNameInputChange(event) {
+    setValues({ ...values, firstName: event.target.value });
   }
   const handleLastNameInputChange = (event) => {
     setValues({...values, lastName: event.target.value})
